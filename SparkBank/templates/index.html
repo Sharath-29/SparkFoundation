@@ -1,0 +1,20 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+
+{% block stylecontent %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<style>
+    body {
+        background-image: url(../static/images/bankbgc.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+{% endblock %}
+
+
+{% block bodycontent %}
+<h1 class="container text-center">Welcome to Spark Bank!</h1>
+{% endblock %}
