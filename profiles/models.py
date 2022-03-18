@@ -1,7 +1,7 @@
 from django.db import models
 import datetime
 
-class BasicDetails (models.Model):
+class BasicDetails(models.Model):
     # (Name, Sex, DOB, Annual income, Email, Mobile number, Occupation) 
     name = models.CharField(max_length = 50, default = None)
     sex = models.CharField(max_length = 1, default = None)
@@ -12,7 +12,7 @@ class BasicDetails (models.Model):
     DOB = models.DateField(default = None)
     user_name = models.CharField(max_length = 150, default = None)
 
-class PresentLocation (models.Model):
+class PresentLocation(models.Model):
     # (Country, State, City, Street, Pincode) 
     country = models.CharField(max_length = 50, default = "India")
     state = models.CharField(max_length = 50)
@@ -21,7 +21,7 @@ class PresentLocation (models.Model):
     pincode = models.IntegerField()
     user_name = models.CharField(max_length = 150, default = None)
 
-class Status (models.Model):
+class Status(models.Model):
     account_number = models.IntegerField()
     balance = models.IntegerField()
     user_name = models.CharField(max_length = 150, default = None)
